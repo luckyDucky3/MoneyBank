@@ -5,9 +5,9 @@ namespace TestApp
     public class CommandHandler
     {
         private readonly MoneyOperations _operations;
-        private readonly CurrencyConverter _converter;
+        private readonly ICurrencyConverter _converter;
 
-        public CommandHandler(MoneyOperations operations, CurrencyConverter converter)
+        public CommandHandler(MoneyOperations operations, ICurrencyConverter converter)
         {
             _operations = operations;
             _converter = converter;
